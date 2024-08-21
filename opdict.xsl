@@ -51,7 +51,6 @@
 	<span class="mfont" title="{
 		     replace(replace(../@id,'U0?','U+'),'-0','&#160;U+')}{
 		     '&#10;accent'[current()/@accent='true']}{
-		     '&#10;fence'[current()/@fence='true']}{
 		     '&#10;stretchy'[current()/@stretchy='true']}{
 		     '&#10;largeop'[current()/@largeop='true']}{
 		     '&#10;symmetric'[current()/@symmetric='true']}{
@@ -102,7 +101,7 @@
 
     
     <xsl:variable  name="c" select="'priority','lspace','rspace'"/>
-    <xsl:variable  name="p" select="'fence','stretchy','separator','accent','largeop','movablelimits', 'symmetric'"/>
+    <xsl:variable  name="p" select="'stretchy','accent','largeop','movablelimits', 'symmetric'"/>
     <xsl:variable name="v" select="'linebreakstyle','minsize'"/>
     <xsl:text>&#10;</xsl:text>
     <table id="oper-dict-table" class="sortable">
